@@ -2,10 +2,11 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io"
 	"os"
 )
+
+const AddressesDataPath = "data/addresses.json"
 
 type Location struct {
 	Category string `json:"categoria"`
@@ -13,17 +14,20 @@ type Location struct {
 	Address  string `json:"endereco"`
 }
 
-func main() {
+func ReadJsonFile() []Location {
 	jsonFile, err := os.Open("data/addresses.json")
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
 	defer jsonFile.Close()
 
-	byteValue, _ := io.ReadAll(jsonFile)
+	byteValue, err := io.ReadAll(jsonFile)
+	if err != nil {
+		panic(err)
+	}
 
 	var locations []Location
 	json.Unmarshal(byteValue, &locations)
-
-
+	
+	return locations
 }
