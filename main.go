@@ -12,6 +12,10 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// UpdateAddresses(config)
+}
+
+func UpdateAddresses(config util.Config) {
 	log.Printf("Reading addresses JSON file...\n")
 	locations, err := ReadJsonFile()
 	if err != nil {
