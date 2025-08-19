@@ -8,6 +8,9 @@ import (
 
 type Config struct {
 	GeocodingApiKey string `mapstructure:"GEOCODING_API_KEY"`
+	AddressesDataPath string `mapstructure:"ADDRESSES_DATA_PATH"`
+	FinalDataPath string `mapstructure:"FINAL_DATA_PATH"`
+	ServerPort string `mapstructure:"SERVER_PORT"`
 }
 
 func LoadConfig(path string) (Config, error) {

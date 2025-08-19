@@ -1,7 +1,13 @@
 package view
 
-templ Index() {
+import "github.com/mickaelyoshua/map-recycling-points/model"
+
+templ Index(locations []model.Location) {
 	@Base() {
-		
+		<ul>
+		for _, location := range locations {
+			<li>{ location.Name } | { location.Latitude }</li>
+		}
+		</ul>
 	}
 }
