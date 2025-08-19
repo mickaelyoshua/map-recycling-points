@@ -20,19 +20,9 @@
     "endereco": "Centro de Vivência, Castelo Branco - João Pessoa - PB, CEP 58033-455"
   },
   {
-    "categoria": "Remédios Vencidos",
-    "nome": "Redepharma",
-    "endereco": "Consultar a filial mais próxima a sua localidade"
-  },
-  {
-    "categoria": "Remédios Vencidos",
-    "nome": "Drogasil",
-    "endereco": "Consultar a filial mais próxima a sua localidade"
-  },
-  {
     "categoria": [
       "Remédios Vencidos",
-      "Recicláveis (Papel, Metal, Plástico, Vidro)",
+      "Recicláveis",
       "Lâmpadas e Pilhas"
     ],
     "nome": "Carrefour (Bessa)",
@@ -41,7 +31,7 @@
   {
     "categoria": [
       "Remédios Vencidos",
-      "Recicláveis (Papel, Metal, Plástico, Vidro)",
+      "Recicláveis",
       "Lâmpadas e Pilhas"
     ],
     "nome": "Carrefour (Jardim São Paulo)",
@@ -63,27 +53,27 @@
     "endereco": "Rua Horigenes Isabel de Farias, s/n - Loteamento Sol Nascente, Tibiri II - Santa Rita, PB, 58032-195"
   },
   {
-    "categoria": "Recicláveis (Papel, Metal, Plástico, Vidro)",
+    "categoria": "Recicláveis",
     "nome": "COOREMM",
     "endereco": "Rua Horígenes Isabel de Farias, R. Sebastião Mendes, S/N - Municípios, Santa Rita - PB, 58303-385"
   },
   {
-    "categoria": "Recicláveis (Papel, Metal, Plástico, Vidro)",
+    "categoria": "Recicláveis",
     "nome": "ASCARE",
     "endereco": "Avenida Severino Nicolau - Bessa, João Pessoa - PB, CEP 58.010-000"
   },
   {
-    "categoria": "Recicláveis (Papel, Metal, Plástico, Vidro)",
+    "categoria": "Recicláveis",
     "nome": "ASTRAMARE",
     "endereco": "Rua Frederico Chopin (antigo lixão), SN, Parque do Roger, Roger, João Pessoa - PB, CEP 58020-120"
   },
   {
-    "categoria": "Recicláveis (Papel, Metal, Plástico, Vidro)",
+    "categoria": "Recicláveis",
     "nome": "CATAJAMPA",
     "endereco": "Rua São Pedro, SN - Mandacaru, João Pessoa - PB, CEP 58027-185"
   },
   {
-    "categoria": "Recicláveis (Papel, Metal, Plástico, Vidro)",
+    "categoria": "Recicláveis",
     "nome": "Acordo Verde",
     "endereco": "R. Rosa Maria Barros Pordeus, 45 - Mangabeira, João Pessoa - PB, CEP 58059-152"
   },
@@ -98,86 +88,71 @@
     "endereco": "Av. Pres. Epitácio Pessoa, 4200 - Miramar, João Pessoa - PB, CEP 58040-000"
   },
   {
-    "categoria": "Eletroeletrônicos (Celulares, Tablets, Computadores e Acessórios)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Claro Connect Cell",
     "endereco": "Av. Hilton Souto Maior, 3901, Mangabeira, João Pessoa - PB"
   },
   {
-    "categoria": "Eletroeletrônicos (Celulares, Tablets, Computadores e Acessórios)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Connect Cell",
     "endereco": "Rua Poeta Targino Teixeira, 251, Altiplano Cabo Branco, João Pessoa - PB"
   },
   {
-    "categoria": "Eletroeletrônicos (Celulares, Tablets, Computadores e Acessórios)",
+    "categoria": "Eletroeletrônicos",
     "nome": "LR NE João Pessoa",
     "endereco": "Av. Presidente Epitácio Pessoa, 1152, Estados, João Pessoa - PB"
   },
   {
-    "categoria": "Eletroeletrônicos (Celulares, Tablets, Computadores e Acessórios)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Conect Cell Claro",
     "endereco": "Rua Deputado Odon Bezerra, 184, Tambiá, João Pessoa - PB"
   },
   {
-    "categoria": "Eletroeletrônicos (Celulares, Tablets, Computadores e Acessórios)",
+    "categoria": "Eletroeletrônicos",
     "nome": "LS NE Manaíra João Pessoa",
     "endereco": "Rua Manoel Arruda Cavalcanti, 805, Manaíra, João Pessoa - PB"
   },
   {
-    "categoria": "Eletroeletrônicos (Celulares, Tablets, Computadores e Acessórios)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Conect Cell Manaíra - JP",
     "endereco": "Av. Governador Flavio Ribeiro Coutinho, 115, Manaíra, João Pessoa - PB"
   },
   {
     "categoria": [
-      "Eletroeletrônicos (Geladeiras, Fogões, Micro-ondas, etc.)",
+      "Eletroeletrônicos",
       "Óleo de Cozinha Usado"
     ],
     "nome": "Ponto da Emlur / Sede",
     "endereco": "Avenida Minas Gerais, n° 177, Estados, João Pessoa - PB, CEP 58030-090"
   },
   {
-    "categoria": "Eletroeletrônicos (Geladeiras, Fogões, Micro-ondas, etc.)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Ponto da Emlur",
     "endereco": "Rua Aluísio França, n° 49, Tambaú, João Pessoa - PB, CEP 58038-060"
   },
   {
-    "categoria": "Eletroeletrônicos (Geladeiras, Fogões, Micro-ondas, etc.)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Ponto da Emlur",
     "endereco": "Avenida Gouveia da Nóbrega, Roger, João Pessoa - PB, CEP 58020-100"
   },
   {
-    "categoria": "Eletroeletrônicos (Geladeiras, Fogões, Micro-ondas, etc.)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Ponto da Emlur",
     "endereco": "Rua Floriano Peixoto, S/N, Jaguaribe, João Pessoa - PB, CEP 58015-280"
   },
   {
-    "categoria": "Eletroeletrônicos (Geladeiras, Fogões, Micro-ondas, etc.)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Ponto da Emlur",
     "endereco": "Praça do Coqueiral, Mangabeira, João Pessoa - PB"
   },
   {
-    "categoria": "Eletroeletrônicos (Geladeiras, Fogões, Micro-ondas, etc.)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Ponto da Emlur",
     "endereco": "Rua Josefa Taveira, Mangabeira, João Pessoa - PB"
   },
   {
-    "categoria": "Eletroeletrônicos (Geladeiras, Fogões, Micro-ondas, etc.)",
+    "categoria": "Eletroeletrônicos",
     "nome": "Ponto da Emlur",
     "endereco": "Avenida Senador Rui Carneiro, n° 416, Miramar, João Pessoa - PB, CEP 58032-100"
-  },
-  {
-    "categoria": "Óleo de Cozinha Usado",
-    "nome": "Projeto de Extensão da UFPB - Ciclaóleo",
-    "endereco": "Entrar em contato pelo Instagram @ciclaoleo_ufpb para confirmar dias e horários"
-  },
-  {
-    "categoria": "Móveis e Eletrodomésticos (Serviço de Coleta)",
-    "nome": "Cata Treco da Emlur",
-    "endereco": "Serviço de busca em residência. Agendamento pelos telefones 0800-083-2425 / 3214-7628 / 3214-7660"
-  },
-  {
-    "categoria": "Óleo de Cozinha Usado (Serviço de Coleta)",
-    "nome": "PB Óleo",
-    "endereco": "Serviço de coleta gratuita. Contato pelos números: (83) 98880-4884 / (83) 98767-9200 ou Instagram @pb_oleo"
   }
 ]

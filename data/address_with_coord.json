@@ -1,0 +1,205 @@
+[
+  {
+    "categoria": "Remédios Vencidos",
+    "nome": "USF Bancários e Aldeia SOS",
+    "endereco": "R. Esmeraldo Gomes Vieira - Bancários, João Pessoa - PB, 58051-650, Brazil",
+    "latitude": -7.1488272,
+    "longitude": -34.8359045
+  },
+  {
+    "categoria": "Remédios Vencidos",
+    "nome": "USF Matinha I",
+    "endereco": "Av. Maximiano Machado, 540 - Jaguaribe, João Pessoa - PB, 58015-110, Brazil",
+    "latitude": -7.1287134,
+    "longitude": -34.8777549
+  },
+  {
+    "categoria": "Remédios Vencidos",
+    "nome": "USF São José (I, II, III, IV e V)",
+    "endereco": "R. Vigolvino Florentino da Costa - Manaíra, João Pessoa - PB, 58038-580, Brazil",
+    "latitude": -7.1058821,
+    "longitude": -34.8394611
+  },
+  {
+    "categoria": "Remédios Vencidos",
+    "nome": "Farmácia da UFPB",
+    "endereco": "BR-230 - Brisamar, João Pessoa - PB, 58033-455, Brazil",
+    "latitude": -7.116712799999999,
+    "longitude": -34.8427559
+  },
+  {
+    "categoria": "",
+    "nome": "Carrefour (Bessa)",
+    "endereco": "R. Bacharel Irenaldo de Albuquerque Chaves - Bessa, João Pessoa - PB, 58036-460, Brazil",
+    "latitude": -7.076835,
+    "longitude": -34.846323
+  },
+  {
+    "categoria": "",
+    "nome": "Carrefour (Jardim São Paulo)",
+    "endereco": "R. Empresário João Rodrigues Alves, 50 - Jardim Sao Paulo, João Pessoa - PB, 58051-022, Brazil",
+    "latitude": -7.146915099999999,
+    "longitude": -34.8494823
+  },
+  {
+    "categoria": "Pneus",
+    "nome": "Ponto da Reciclanip (Bayeux)",
+    "endereco": "BR-101 - Manguinhos, Bayeux - PB, Brazil",
+    "latitude": -7.1409265,
+    "longitude": -34.9215992
+  },
+  {
+    "categoria": "Pneus",
+    "nome": "Ponto da Reciclanip (Bayeux)",
+    "endereco": "Av. Liberdade, 3720 - Baralho, Bayeux - PB, 58306-000, Brazil",
+    "latitude": -7.1255111,
+    "longitude": -34.9278472
+  },
+  {
+    "categoria": "Pneus",
+    "nome": "Ponto da Reciclanip (Santa Rita)",
+    "endereco": "R. Horigenes Isabel de Farias - Tibiri, Santa Rita - PB, 58300, Brazil",
+    "latitude": -7.1618844,
+    "longitude": -34.9703699
+  },
+  {
+    "categoria": "Recicláveis",
+    "nome": "COOREMM",
+    "endereco": "R. Horigenes Isabel de Farias - Tibiri, Santa Rita - PB, 58300, Brazil",
+    "latitude": -7.1618844,
+    "longitude": -34.9703699
+  },
+  {
+    "categoria": "Recicláveis",
+    "nome": "ASCARE",
+    "endereco": "R. Severino Nicolau de Melo - Bessa, João Pessoa - PB, 58037-700, Brazil",
+    "latitude": -7.0763363,
+    "longitude": -34.8364643
+  },
+  {
+    "categoria": "Recicláveis",
+    "nome": "ASTRAMARE",
+    "endereco": "Parque do Roger - R. Silva Ramos, 142 - Alto do Céu, João Pessoa - PB, 58020-350, Brazil",
+    "latitude": -7.1083265,
+    "longitude": -34.8837067
+  },
+  {
+    "categoria": "Recicláveis",
+    "nome": "CATAJAMPA",
+    "endereco": "R. São Pedro, João Pessoa - PB, 58027-185, Brazil",
+    "latitude": -7.0999516,
+    "longitude": -34.8641187
+  },
+  {
+    "categoria": "Recicláveis",
+    "nome": "Acordo Verde",
+    "endereco": "R. Domestica Rosa Maria Barros Pontes, 45 - Mangabeira, João Pessoa - PB, 58059-152, Brazil",
+    "latitude": -7.1839851,
+    "longitude": -34.8361559
+  },
+  {
+    "categoria": "Lâmpadas e Pilhas",
+    "nome": "Atacadão",
+    "endereco": "R. Norma de Araujo Batista, 951 - Distrito Industrial, João Pessoa - PB, 58088, Brazil",
+    "latitude": -7.1921744,
+    "longitude": -34.8957198
+  },
+  {
+    "categoria": "Lâmpadas e Pilhas",
+    "nome": "Pão de Açúcar",
+    "endereco": "Av. Pres. Epitácio Pessoa, 4200 - Torre, João Pessoa - PB, 58040-000, Brazil",
+    "latitude": -7.1201307,
+    "longitude": -34.8321883
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Claro Connect Cell",
+    "endereco": "Av. Hilton Souto Maior, 3901 - Mangabeira, João Pessoa - PB, 58055-000, Brazil",
+    "latitude": -7.162198800000001,
+    "longitude": -34.8305084
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Connect Cell",
+    "endereco": "R. Poe. Targino Teixeira, 251 - Altiplano Cabo Branco, João Pessoa - PB, 58046-090, Brazil",
+    "latitude": -7.1302895,
+    "longitude": -34.8257843
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "LR NE João Pessoa",
+    "endereco": "Av. Pres. Epitácio Pessoa, 1152 - Cabo Branco, João Pessoa - PB, 58040-000, Brazil",
+    "latitude": -7.1200329,
+    "longitude": -34.8600524
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Conect Cell Claro",
+    "endereco": "R. Dep. Odon Bezerra, 184 - Centro, João Pessoa - PB, 58020-500, Brazil",
+    "latitude": -7.115574899999999,
+    "longitude": -34.8801765
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "LS NE Manaíra João Pessoa",
+    "endereco": "R. Manoel Arruda Cavalcante, 805 - Manaíra, João Pessoa - PB, 58038-680, Brazil",
+    "latitude": -7.099041499999999,
+    "longitude": -34.8449801
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Conect Cell Manaíra - JP",
+    "endereco": "Av. Gov. Flávio Ribeiro Coutinho, 115 - Manaíra, João Pessoa - PB, 58037-000, Brazil",
+    "latitude": -7.0975715,
+    "longitude": -34.8340447
+  },
+  {
+    "categoria": "",
+    "nome": "Ponto da Emlur / Sede",
+    "endereco": "Av. Minas Gerais, 177 - Estados, João Pessoa - PB, 58030-090, Brazil",
+    "latitude": -7.1143955,
+    "longitude": -34.8594571
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Ponto da Emlur",
+    "endereco": "R. Aluísio França, 49 - Manaíra, João Pessoa - PB, 58038-060, Brazil",
+    "latitude": -7.1098615,
+    "longitude": -34.8260448
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Ponto da Emlur",
+    "endereco": "Baixo Roger, João Pessoa - PB, Brazil",
+    "latitude": -7.107416100000001,
+    "longitude": -34.8775904
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Ponto da Emlur",
+    "endereco": "Av. Floriano Peixoto - Jaguaribe, João Pessoa - PB, 58015-280, Brazil",
+    "latitude": -7.1333988,
+    "longitude": -34.8774652
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Ponto da Emlur",
+    "endereco": "58056-470 - Av. Laura Muniz de Lima, 77-201 - Mangabeira, João Pessoa - PB, 58056-470, Brazil",
+    "latitude": -7.174202999999999,
+    "longitude": -34.8448621
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Ponto da Emlur",
+    "endereco": "R. Josefa Taveira - Mangabeira, João Pessoa - PB, 58055-000, Brazil",
+    "latitude": -7.1723996,
+    "longitude": -34.8397392
+  },
+  {
+    "categoria": "Eletroeletrônicos",
+    "nome": "Ponto da Emlur",
+    "endereco": "Av. Sen. Ruy Carneiro, 416 - Tambaú, João Pessoa - PB, 58032-101, Brazil",
+    "latitude": -7.1180274,
+    "longitude": -34.8394075
+  }
+]
