@@ -26,7 +26,10 @@ func main() {
 
 	router.GET("/", controller.Index(locations))
 
-	router.Run(":" + config.ServerPort)
+	err = router.Run(":" + config.ServerPort)
+	if err != nil {
+		log.Fatalf("Error running the server: %v\n", err)
+	}
 }
 
 func UpdateAddresses(config util.Config) {

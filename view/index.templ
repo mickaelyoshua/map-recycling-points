@@ -1,13 +1,20 @@
 package view
 
-import "github.com/mickaelyoshua/map-recycling-points/model"
+import (
+	"github.com/mickaelyoshua/map-recycling-points/model"
+	"github.com/mickaelyoshua/map-recycling-points/view/components"
+)
 
-templ Index(locations []model.Location) {
+templ Index(locations []model.Location, categories []string, activeCategory string) {
 	@Base() {
-		<ul>
-		for _, location := range locations {
-			<li>{ location.Name } | { location.Latitude }</li>
-		}
-		</ul>
+		<h1>Pontos de Reciclagem em João Pessoa</h1>
+		@components.Filters(categories, activeCategory)
+		<div id="map-container">
+			<div id="map"></div>
+		</div>
+		<script>
+			// Embed locations data for JavaScript
+			var locationsData = {! json.Marshal(locations) };
+		</script>
 	}
 }
