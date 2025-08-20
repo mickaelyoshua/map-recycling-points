@@ -2,7 +2,6 @@ package view
 
 import (
 	"encoding/json"
-	"fmt"
 
 	"github.com/mickaelyoshua/map-recycling-points/model"
 )
@@ -21,19 +20,15 @@ templ Index(locations model.Locations, categories []string) {
 	@Base() {
 		<h1>Pontos de Reciclagem em João Pessoa</h1>
 
-		<button
-			hx-get="/"
-			hx-trigger="click"
-			hx-vals='{"category": "Todos"}'
-			hx-target="body"
-		>Todos</button>
+		<form action="/" method="GET">
+			<input type="hidden" name="category" value="Todos"/>
+			<button type="submit">Todos</button>
+		</form>
 		for _, category := range categories {
-			<button
-				hx-get="/"
-				hx-trigger="click"
-				hx-vals={ fmt.Sprintf("{\"category\": \"%v\"}", category) }
-				hx-target="body"
-			>{ category }</button>
+			<form action="/" method="GET">
+				<input type="hidden" name="category" value={ category }/>
+				<button type="submit">{ category }</button>
+			</form>
 		}
 
 		<div id="map-container">
