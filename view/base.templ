@@ -8,22 +8,18 @@ templ Base() {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<title>Mapa Pontos de Coleta</title>
 
-			// Map Leaflet code
-			<script src="/static/map.js"></script>
-
 			// Leaflet CSS
 			<link rel="stylesheet" href="/static/css/leaflet.css"/>
 			// Leaflet JS
 			<script src="static/scripts/leaflet.js"></script>
 
-			// Style
-			<link rel="stylesheet" href="/static/css/styles.css"/>
-			
 			// HTMX
 			<script src="/static/scripts/htmx.min.js"></script>
 		</head>
 			<body hx-boot="true">
 			{ children... }
+			// Map script
+			<script src="static/scripts/map.js"></script>
 			</body>
 	</html>
 }

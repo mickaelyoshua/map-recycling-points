@@ -1,37 +1,43 @@
 package view
 
 import (
-	"github.com/mickaelyoshua/map-recycling-points/model"
+	"encoding/json"
 	"fmt"
+
+	"github.com/mickaelyoshua/map-recycling-points/model"
 )
 
-templ Index(locations []model.Location, categories []string) {
+// locationsToJSON converts the slice of locations to a JSON string.
+func locationsToJSON(locations model.Locations) string {
+	b, err := json.Marshal(locations)
+	if err != nil {
+		// In a real app, you might want to log this error.
+		return "[]"
+	}
+	return string(b)
+}
+
+templ Index(locations model.Locations, categories []string) {
 	@Base() {
 		<h1>Pontos de Reciclagem em João Pessoa</h1>
 
-		<button hx-get="/" hx-vals='{"category": "Todos"}' hx-target="body">Todos</button>
+		<button
+			hx-get="/"
+			hx-trigger="click"
+			hx-vals='{"category": "Todos"}'
+			hx-target="body"
+		>Todos</button>
 		for _, category := range categories {
 			<button
 				hx-get="/"
+				hx-trigger="click"
 				hx-vals={ fmt.Sprintf("{\"category\": \"%v\"}", category) }
 				hx-target="body"
 			>{ category }</button>
 		}
 
 		<div id="map-container">
-			<div id="map"></div>
+			<div id="map" data-locations={ locationsToJSON(locations) }></div>
 		</div>
-		<script>
-			const joaoPessoaCoords = [-7.1195, -34.8451]; // Latitude, Longitude for João Pessoa
-    		const map = L.map('map').setView(joaoPessoaCoords, 12);
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-				{ attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }
-				).addTo(map);
-
-			// for i, location := range locations {
-			// 	{ fmt.Sprintf("const marker%v = L.marker([%v,%v]).addTo(map);", i, location.Latitude, location.Longitude) }
-			// }
-			// const marker1 = L.marker([-7.1488272, -34.8359045]).addTo(map);
-		</script>
-	}
+		}
 }
