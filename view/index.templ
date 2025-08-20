@@ -20,6 +20,7 @@ templ Index(locations model.Locations, categories []string) {
 	@Base() {
 		<h1>Pontos de Reciclagem em João Pessoa</h1>
 
+		<div class="button-container">
 		<form action="/" method="GET">
 			<input type="hidden" name="category" value="Todos"/>
 			<button type="submit">Todos</button>
@@ -30,6 +31,7 @@ templ Index(locations model.Locations, categories []string) {
 				<button type="submit">{ category }</button>
 			</form>
 		}
+		</div>
 
 		<div id="map-container">
 			<div id="map" data-locations={ locationsToJSON(locations) }></div>

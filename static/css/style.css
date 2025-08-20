@@ -1,0 +1,62 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Dark blue-purple background */
+    color: #e0e0e0; /* Light gray text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    color: #0f4c75; /* Dark blue heading */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff; /* Darker blue for buttons */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Even darker blue on hover */
+}
+
+/* Map Container */
+#map-container {
+    margin-top: 30px;
+    border: 2px solid #0f4c75; /* Border matching heading color */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures map corners are rounded with container */
+}
+
+#map {
+    height: 500px; /* Fixed height for the map */
+    width: 100%; /* Full width of its container */
+    border-radius: 8px; /* Match container border-radius */
+}
+
+/* Optional: Improve form layout for buttons */
+form {
+    display: inline-block; /* Allows buttons to sit next to each other */
+    margin: 0;
+    padding: 0;
+}
+
+/* Button Container for Centering */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    margin-bottom: 20px; /* Add some space below the buttons */
+}

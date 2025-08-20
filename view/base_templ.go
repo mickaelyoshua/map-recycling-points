@@ -29,7 +29,7 @@ func Base() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"pt-br\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Mapa Pontos de Coleta</title><link rel=\"stylesheet\" href=\"/static/css/leaflet.css\"><script src=\"static/scripts/leaflet.js\"></script><script src=\"/static/scripts/htmx.min.js\"></script></head><body hx-boot=\"true\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"pt-br\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Mapa Pontos de Coleta</title><link rel=\"stylesheet\" href=\"/static/css/leaflet.css\"><link rel=\"stylesheet\" href=\"/static/css/style.css\"><script src=\"static/scripts/leaflet.js\"></script></head><body hx-boot=\"true\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
