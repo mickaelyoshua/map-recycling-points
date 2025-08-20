@@ -13,17 +13,17 @@ templ Base() {
 
 			// Leaflet CSS
 			<link rel="stylesheet" href="/static/css/leaflet.css"/>
+			// Leaflet JS
+			<script src="static/scripts/leaflet.js"></script>
 
 			// Style
 			<link rel="stylesheet" href="/static/css/styles.css"/>
 			
 			// HTMX
 			<script src="/static/scripts/htmx.min.js"></script>
-			// HTMX extension to deal with 4xx and 5xx responses
-			<script src="/static/scripts/response-targets.js"></script>
-			</head>
-			<body hx-boot="true" hx-ext="response-targets">
+		</head>
+			<body hx-boot="true">
 			{ children... }
-		</body>
+			</body>
 	</html>
 }

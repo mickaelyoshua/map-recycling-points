@@ -7,22 +7,24 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"slices"
 )
 
 const GeocodingURL = "https://maps.googleapis.com/maps/api/geocode/json"
 
 type Location struct {
-	Category  string  `json:"categoria"`
+	Category  any     `json:"categoria"`
 	Name      string  `json:"nome"`
 	Address   string  `json:"endereco"`
 	Latitude  float64 `json:"latitude,omitempty"`
 	Longitude float64 `json:"longitude,omitempty"`
 }
+type Locations []Location
 type ResponseData struct {
 	Results []any `json:"results"`
 }
 
-func ReadJsonFile(path string) ([]Location, error) {
+func ReadJsonFile(path string) (Locations, error) {
 	jsonFile, err := os.Open(path)
 	if err != nil {
 		return nil, fmt.Errorf("Error opening data file: %v\n", err)
@@ -75,7 +77,7 @@ func GetCoordinates(client *http.Client, endpoint *url.URL, l *Location, key str
 	return nil
 }
 
-func GetAllCoordinates(ls []Location, key string) error {
+func GetAllCoordinates(ls Locations, key string) error {
 	client := &http.Client{}
 	endpoint, err := url.Parse(GeocodingURL)
 	if err != nil {
@@ -104,4 +106,46 @@ func WriteJsonFile(locations []Location, dataPath string) error {
 	}
 
 	return nil
+}
+
+func (locations Locations) GetCategories() []string {
+	categoriesMap := make(map[string]bool)
+	for _, l := range locations {
+		
+		// category can be string or []string
+		if l.Category != "" {
+			switch t := l.Category.(type) {
+			case string:
+				categoriesMap[t] = true
+			case []any:
+				for _, cat := range t {
+					s, ok := cat.(string)
+					if ok {
+						categoriesMap[s] = true
+					}
+				}
+			}
+		}
+	}
+
+	var categories []string
+	for k := range categoriesMap {
+		categories = append(categories, k)
+	}
+	slices.Sort(categories)
+	return categories
+}
+
+func (locations Locations) FilterLocations(category string) Locations {
+	if category == "Todos" {
+		return locations
+	}
+	
+	var filteredLocations Locations
+	for _, l := range locations {
+		if l.Category == category {
+			filteredLocations = append(filteredLocations, l)
+		}
+	}
+	return filteredLocations
 }

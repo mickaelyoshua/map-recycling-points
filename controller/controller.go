@@ -3,7 +3,6 @@ package controller
 import (
 	"log"
 	"net/http"
-	"sort"
 
 	"github.com/a-h/templ"
 	"github.com/gin-gonic/gin"
@@ -21,38 +20,17 @@ func HandlerRenderError(err error) {
 	}
 }
 
-func Index(allLocations []model.Location) gin.HandlerFunc {
+func Index(locations model.Locations) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		// Extract unique categories
-		categoriesMap := make(map[string]bool)
-		for _, loc := range allLocations {
-			if loc.Category != "" {
-				categoriesMap[loc.Category] = true
-			}
-		}
-		var categories []string
-		for cat := range categoriesMap {
-			categories = append(categories, cat)
-		}
-		sort.Strings(categories)
+		categories := locations.GetCategories()
 
-		activeCategory := c.Query("category")
+		activeCategory := c.Request.FormValue("category")
 		if activeCategory == "" {
-			activeCategory = "all" // Default to "all" if no category is specified
+			activeCategory = "Todos" // Default to "all" if no category is specified
 		}
 
-		var filteredLocations []model.Location
-		if activeCategory == "all" {
-			filteredLocations = allLocations
-		} else {
-			for _, loc := range allLocations {
-				if loc.Category == activeCategory {
-					filteredLocations = append(filteredLocations, loc)
-				}
-			}
-		}
-
-		err := Render(c, http.StatusOK, view.Index(filteredLocations, categories, activeCategory))
+		filteredLocations := locations.FilterLocations(activeCategory)
+		err := Render(c, http.StatusOK, view.Index(filteredLocations, categories))
 		HandlerRenderError(err)
 	}
 }

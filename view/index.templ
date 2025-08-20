@@ -2,19 +2,36 @@ package view
 
 import (
 	"github.com/mickaelyoshua/map-recycling-points/model"
-	"github.com/mickaelyoshua/map-recycling-points/view/components"
+	"fmt"
 )
 
-templ Index(locations []model.Location, categories []string, activeCategory string) {
+templ Index(locations []model.Location, categories []string) {
 	@Base() {
 		<h1>Pontos de Reciclagem em João Pessoa</h1>
-		@components.Filters(categories, activeCategory)
+
+		<button hx-get="/" hx-vals='{"category": "Todos"}' hx-target="body">Todos</button>
+		for _, category := range categories {
+			<button
+				hx-get="/"
+				hx-vals={ fmt.Sprintf("{\"category\": \"%v\"}", category) }
+				hx-target="body"
+			>{ category }</button>
+		}
+
 		<div id="map-container">
 			<div id="map"></div>
 		</div>
 		<script>
-			// Embed locations data for JavaScript
-			var locationsData = {! json.Marshal(locations) };
+			const joaoPessoaCoords = [-7.1195, -34.8451]; // Latitude, Longitude for João Pessoa
+    		const map = L.map('map').setView(joaoPessoaCoords, 12);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+				{ attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }
+				).addTo(map);
+
+			// for i, location := range locations {
+			// 	{ fmt.Sprintf("const marker%v = L.marker([%v,%v]).addTo(map);", i, location.Latitude, location.Longitude) }
+			// }
+			// const marker1 = L.marker([-7.1488272, -34.8359045]).addTo(map);
 		</script>
 	}
 }
